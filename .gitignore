@@ -1,0 +1,8 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/Calc.API/.vs/Calc.API/v16
+/Calc.API/obj
+/Calc.API/.vs/Calc.API
+/Calc.API/bin
