@@ -25,8 +25,14 @@ namespace Calc.API.Controllers
             ParametrosCalculoDTO pParametrosCalculoDTO = new ParametrosCalculoDTO();
             pParametrosCalculoDTO.ValorInicial = pValorinicial;
             pParametrosCalculoDTO.Meses = pMeses;
-            CalculaJurosServices calculaJurosServices = new CalculaJurosServices();
-            return calculaJurosServices.CalcularJurosComposto(pParametrosCalculoDTO).ToString();
+
+            if (String.IsNullOrEmpty(pParametrosCalculoDTO.ValidarParametros()))
+            {
+                CalculaJurosServices calculaJurosServices = new CalculaJurosServices();
+                return calculaJurosServices.CalcularJurosComposto(pParametrosCalculoDTO).ToString();
+            }
+
+            return pParametrosCalculoDTO.ValidarParametros();
         }
     }
 }
