@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Calc.API.Models
 {
@@ -32,7 +29,7 @@ namespace Calc.API.Models
             {
                 Resultado = "O valor '" + ValorInicial.ToString() + "' atribuido ao parâmetro 'ValorInicial' deve ser um número decimal válido.\n";
             }
-            else if (ValorInicial<=0)
+            else if (ValorInicial <= 0)
             {
                 Resultado += "O valor atribuido ao parâmetro 'ValorInicial' deve ser um número decimal maior que zero (0).\n";
             }
@@ -49,7 +46,6 @@ namespace Calc.API.Models
 
             return Resultado;
         }
-
 
     }
 
