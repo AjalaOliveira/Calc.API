@@ -14,9 +14,7 @@ namespace Calc.API.Service
 
         public String CalcularJurosComposto(ParametrosCalculoDTO pParametrosCalculoDTO)
         {
-            ResultadoJurosCompostoDTO resultadoJurosCompostoDTO = new ResultadoJurosCompostoDTO();
-            resultadoJurosCompostoDTO.Resultado = Math.Truncate(100 * (pParametrosCalculoDTO.ValorInicial * (decimal)Math.Pow((1+Juros), (double)pParametrosCalculoDTO.Meses))) / 100;
-            return resultadoJurosCompostoDTO.Resultado.ToString("#0.00");
+            return (Math.Truncate(100 * (pParametrosCalculoDTO.ValorInicial * (decimal)Math.Pow((1 + Juros), (double)pParametrosCalculoDTO.Meses))) / 100).ToString("#0.00");
         }
     }
 }

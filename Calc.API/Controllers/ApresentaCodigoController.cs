@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Calc.API.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Calc.API.Controllers
@@ -13,7 +14,8 @@ namespace Calc.API.Controllers
         [Route("showmethecode")]
         public ActionResult<string> ShowMeTheCode()
         {
-            return "https://github.com/AjalaOliveira/Calc.API";
+            ApresentaCodigoService apresentaCodigoService = new ApresentaCodigoService();
+            return apresentaCodigoService.ShowMeTheCode();
         }
     }
 }

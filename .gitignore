@@ -6,3 +6,5 @@
 /Calc.API/obj
 /Calc.API/.vs/Calc.API
 /Calc.API/bin
+/Calc.API.Teste.Unidade/bin/Debug/netcoreapp2.2
+/Calc.API.Teste.Unidade/obj
