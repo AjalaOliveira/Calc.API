@@ -15,8 +15,8 @@ namespace Calc.API.Controllers
         [AllowAnonymous]
         [Route("calculajuros")]
         public ActionResult<string> CalculaJuros(
-            [FromQuery(Name = "ValorInicial")] decimal pValorinicial,
-            [FromQuery(Name = "Meses")] int pMeses
+            [FromQuery(Name = "valorinicial")] decimal pValorinicial,
+            [FromQuery(Name = "meses")] int pMeses
             )
         {
             ParametrosCalculoDTO pParametrosCalculoDTO = new ParametrosCalculoDTO();
