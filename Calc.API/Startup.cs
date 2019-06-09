@@ -25,9 +25,11 @@ namespace Calc.API
             {
                 s.SwaggerDoc("v1", new Info
                 {
-                    Version = "API",
+                    Version = "V1.0",
                     Title = "Calcular Juros compostos",
-                    Description = "Calculador API Swagger surface",
+                    Description = "API desenvolvida em APS.NET Core 2.2 com duas funcionalidade:\n\n" +
+                    " * Endpoint /showmethecode: Retornar a URL do repositório da aplicação no GitHub.\n\n" +
+                    " * Endpoint /calculajuros: Retornar o resultado de juros compostos aplicados ao valor inicial e a quantidade de meses informado, considerando a taxa fixa de 1% ao mês.",
                     Contact = new Contact
                     {
                         Name = "Ajala Oliveira",
@@ -61,7 +63,7 @@ namespace Calc.API
             app.UseSwagger();
             app.UseSwaggerUI(s => 
             {
-                s.SwaggerEndpoint("/swagger/v1/swagger.json", "API - Calcular Juros compostos API v1.0");
+                s.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1.0");
             });
         }
     }
