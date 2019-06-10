@@ -1,5 +1,5 @@
 # Calc.API
-API desenvolvida em APS.NET Core 2.2 com duas funcionalidade:
+API desenvolvida em ASP.NET Core 2.2 com duas funcionalidade:
 
 - Endpoint /showmethecode: Retornar a URL do repositório da aplicação no GitHub.
 - Endpoint /calculajuros: Retornar o resultado de juros compostos aplicados ao valor inicial e a quantidade de meses informado, considerando a taxa fixa de 1% ao mês.
