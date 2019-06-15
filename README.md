@@ -39,7 +39,7 @@ Camada de Controles:
 - https://hub.docker.com/r/ajala/calcapi
 
 Comandos docker para baixar e executar a imagem:
-   - docker pull ajala/calcap
+   - docker pull ajala/calcapi
    - docker run -d -p 12345:80 ajala/calcapi
    - Imagem em execução: http://localhost:12345/swagger/index.html
 
