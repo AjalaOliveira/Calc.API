@@ -32,9 +32,6 @@ Camada de Controles:
 * Teste para garantir a funcionalidade de validação da quantidade de meses informada não deve estar em branco.
 * Teste para garantir a funcionalidade de validação do valor inicial e da quantidade de meses informada não deve estar em branco.
 
-# API V1.0:
-- http://calcjuroscompostos.azurewebsites.net/swagger/index.html
-
 # Imagem Docker:
 - https://hub.docker.com/r/ajala/calcapi
 
